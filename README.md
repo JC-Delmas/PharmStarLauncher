@@ -82,10 +82,7 @@ Les rapports en format HTML seront présent pour chaque VCF, ainsi qu'un fichier
 
 ## Support
 En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher
-Veuillez bien renseigné les étapes qui ont été réalisés avec les choix faits, et de fournir :
+
+Veuillez bien renseigner les étapes qui ont été réalisées avec les choix faits et fournir :
 - Les fichiers logs de CrossMap s'il y a eu une opération de liftover.
-- Les fichiers logs présents dans le répertoire des résultats.
-
-
-
-
+- Les fichiers logs présents dans le répertoire des résultats
