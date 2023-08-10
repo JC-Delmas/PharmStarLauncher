@@ -1,12 +1,12 @@
 # PharmStarLauncher
 ## Description générale
-PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCh37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. 
+PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCh37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. Le pipeline, développé pour l'haplotypage de patients pour le Laboratoire de Toxicologie du CHU de Nîmes, est actuellement à la version 0.1.
 
 Le pipeline utilise la version **0.6.4** de **CrossMap** et la version **2.4.0** de **PharmCAT**.
 
 
 ## Dépendances:
-Pour fonctionner, le pipeline a impérativement besoin des versions des outils suivants:
+Pour fonctionner, le pipeline a impérativement besoin des versions des outils suivants :
 
 **Java = 17**
 
@@ -27,61 +27,64 @@ git clone https://github.com/JC-Delmas/PharmStarLauncher.git
 
 Pour lancer le pipeline depuis n'importe quelle instance du terminale, veuillez suivre les étapes suivantes :
 
-- Rendre le script exécutable depuis le terminale :
+**- Rendre le script exécutable depuis le terminale :**
 ```bash
 chmod +x /chemin/vers/PharmStarLauncher.sh
 ```
 
-- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer avant de créer le raccourci) :
+**- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer avant de créer le raccourci) :**
 ```bash
 sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
 ```
 
-- Ajouter ensuite ce répertoire au PATH :
-	- pour macOS arm64 :
-   	```bash
-    	echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
-    	```
-	- pour Linux (système Ubuntu) :
-    	```bash
-    	echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
-    	```
+**- Ajouter ensuite ce répertoire au PATH :**
 
-- Rechargez le shell :
-	 - pour MacOS arm64 :
-    	```bash
-	 source ~/.zshrc
-  	```
+*pour MacOS arm64 :*
+```bash
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+```
+*pour Linux (système Ubuntu) :*
+    
+```bash
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+```
+
+**- Rechargez le shell :**
+
+*pour MacOS arm64 :*
+```bash
+source ~/.zshrc
+```
 	 
-	 - pour Linux (système Ubuntu) :
- 	```bash
-	 source ~/.bashrc
- 	 ```
+*pour Linux (système Ubuntu) :*
+```bash
+source ~/.bashrc
+```
 
 ## Exécution
-- Si vous avez suivi les étapes de configuration, ouvrez un terminal à partir de n'importe quel endroit puis tapez :
+- **Si vous avez suivi les étapes de configuration, ouvrez un terminal à partir de n'importe quel endroit puis tapez :**
 ```bash
 PharmStarLauncher
 ```
 
-- Sinon, vous pouvez lancer l'outil uniquement depuis le répertoire où il se situe avec la commande suivante :
+- **Sinon, vous pouvez lancer l'outil uniquement depuis le répertoire où il se situe avec la commande suivante :**
 ```bash
 bash PharmStarLauncher.sh
 ```
-ou
+**ou**
 ```bash
 ./PharmStarLauncher.sh
 ```
 
 ## Output
-Un répertoire crossmap-log sera généré dans le répertoire courant du script et contiendra un fichier log par fichier VCF qui indique le traitement réalisé par CrossMap dans le cas où un liftover (GRCh37 vers GRCh38) est réalisé. Cela indique également le nombre de positions qui n'ont pas pu être repositionnées pendant la conversion.
+Un répertoire **crossmap-log** sera généré dans le répertoire courant du script et contiendra un fichier log par fichier VCF qui indique le traitement réalisé par CrossMap dans le cas où un liftover (GRCh37 vers GRCh38) est réalisé. Cela indique également le nombre de positions qui n'ont pas pu être repositionnées pendant la conversion.
 
-Les résultats seront stockés dans un répertoire "results_$datetime" dans le répertoire courant où se situe le script PharmStarLauncher.sh.
+Les résultats seront stockés dans un répertoire **"results_$datetime"** dans le répertoire courant où se situe le script PharmStarLauncher.sh.
 Les rapports en format HTML seront présents pour chaque VCF, ainsi qu'un fichier log par fichier VCF traité qui récapitule les commandes et traitements par l'outil PharmCAT.
 
 ## Support
-En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher/issues
+En cas de problèmes rencontrés, veuillez utiliser l'onglet *"Issues"* du github : https://github.com/JC-Delmas/PharmStarLauncher/issues
 
 Veuillez bien renseigner les étapes qui ont été réalisées avec les choix faits et fournir :
 - Les fichiers logs de CrossMap s'il y a eu une opération de liftover.
-- Les fichiers logs présents dans le répertoire des résultats
+- Les fichiers logs présents dans le répertoire des résultats.
