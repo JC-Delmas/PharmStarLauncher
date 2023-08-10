@@ -80,7 +80,7 @@ Les résultats seront stockés dans un répertoire "results_$datetime" dans le r
 Les rapports en format HTML seront présents pour chaque VCF, ainsi qu'un fichier log par fichier VCF traité qui récapitule les commandes et traitements par l'outil PharmCAT.
 
 ## Support
-En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher
+En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher/issues
 
 Veuillez bien renseigner les étapes qui ont été réalisées avec les choix faits et fournir :
 - Les fichiers logs de CrossMap s'il y a eu une opération de liftover.
