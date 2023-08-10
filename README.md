@@ -1,6 +1,6 @@
 # PharmStarLauncher
 ## Description générale
-PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCH37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. 
+PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCh37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. 
 
 Le pipeline utilise la version **0.6.4** de **CrossMap** et la version **2.4.0** de **PharmCAT**.
 
@@ -42,7 +42,6 @@ sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
 ```bash
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
 ```
-	
 	- pour Linux (système Ubuntu) :
  ```bash
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
