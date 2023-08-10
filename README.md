@@ -32,7 +32,7 @@ Pour lancer le pipeline depuis n'importe quelle instance du terminale, veuillez 
 chmod +x /chemin/vers/PharmStarLauncher.sh
 ```
 
-- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer puis le déplacer) :
+- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer avant de créer le raccourci) :
 ```bash
 sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
 ```
