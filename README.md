@@ -80,6 +80,7 @@ Un répertoire crossmap-log sera généré dans le répertoire courant du script
 Les résultats seront stockés dans un répertoire "results_$datetime" dans le répertoire courant où se situe le script PharmStarLauncher.sh.
 Les rapports en format HTML seront présent pour chaque VCF, ainsi qu'un fichier log par fichier VCF traité qui récapitule les commandes et traitement par l'outil PharmCAT.
 
+## Support
 En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher
 Veuillez bien renseigné les étapes qui ont été réalisés avec les choix faits, et de fournir :
 - Les fichiers logs de CrossMap s'il y a eu une opération de liftover.
