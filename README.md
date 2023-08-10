@@ -39,24 +39,24 @@ sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
 
 - Ajouter ensuite ce répertoire au PATH :
 	- pour macOS arm64 :
-```bash
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
-```
+   	```bash
+    	echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+    	```
 	- pour Linux (système Ubuntu) :
- ```bash
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
- ```
+    	```bash
+    	echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+    	```
 
 - Rechargez le shell :
 	 - pour MacOS arm64 :
-  ```bash
+    	```bash
 	 source ~/.zshrc
-  ```
+  	```
 	 
 	 - pour Linux (système Ubuntu) :
- ```bash
+ 	```bash
 	 source ~/.bashrc
-  ```
+ 	 ```
 
 ## Exécution
 - Si vous avez suivi les étapes de configuration, ouvrez un terminal à partir de n'importe quel endroit puis tapez :
