@@ -78,7 +78,7 @@ ou
 Un répertoire crossmap-log sera généré dans le répertoire courant du script et contiendra un fichier log par fichier VCF qui indique le traitement réalisé par CrossMap dans le cas où un liftover (GRCh37 vers GRCh38) est réalisé. Cela indique également le nombre de positions qui n'ont pas pu être repositionnées pendant la conversion.
 
 Les résultats seront stockés dans un répertoire "results_$datetime" dans le répertoire courant où se situe le script PharmStarLauncher.sh.
-Les rapports en format HTML seront présent pour chaque VCF, ainsi qu'un fichier log par fichier VCF traité qui récapitule les commandes et traitement par l'outil PharmCAT.
+Les rapports en format HTML seront présents pour chaque VCF, ainsi qu'un fichier log par fichier VCF traité qui récapitule les commandes et traitements par l'outil PharmCAT.
 
 ## Support
 En cas de problèmes rencontrés, veuillez utiliser l'onglet "Issues" du github : https://github.com/JC-Delmas/PharmStarLauncher
