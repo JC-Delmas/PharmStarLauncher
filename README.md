@@ -8,7 +8,7 @@ Le pipeline utilise la version **0.6.4** de **CrossMap** et la version **2.4.0**
 ## Dépendances:
 Pour fonctionner, le pipeline a impérativement besoin des versions des outils suivants :
 
-**Java = 17**
+**Java = 17.0.8**
 
 **Python >= 3.10.12**
 
@@ -35,18 +35,6 @@ chmod +x /chemin/vers/PharmStarLauncher.sh
 **- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer avant de créer le raccourci) :**
 ```bash
 sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
-```
-
-**- Ajouter ensuite ce répertoire au PATH :**
-
-*pour MacOS arm64 :*
-```bash
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
-```
-*pour Linux (système Ubuntu) :*
-    
-```bash
-echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 ```
 
 **- Rechargez le shell :**
