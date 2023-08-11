@@ -29,7 +29,7 @@ Ouvrez un terminal à l'endroit où vous souhaitez placer le pipeline (création
 git clone https://github.com/JC-Delmas/PharmStarLauncher.git
 ```
 
-Pour installer PharmStarLauncher, ouvrez un terminal, placez-vous dans le répertoire où se situe le script d'installation **install.sh** (situé dans le dossier PharmStarLauncher) puis tapez :
+Pour installer PharmStarLauncher, ouvrez un terminal, placez-vous dans le répertoire où se situe le script d'installation **install.sh** (situé dans le dossier scripts de PharmStarLauncher) puis tapez :
 ```bash
 ./ install.sh
 ```
