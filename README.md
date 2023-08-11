@@ -5,7 +5,7 @@ PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur 
 Le pipeline utilise la version **0.6.4** de **CrossMap** et la version **2.4.0** de **PharmCAT**.
 
 
-## Dépendances:
+## Dépendances
 Pour fonctionner, le pipeline a impérativement besoin des versions des outils suivants :
 
 **Java = 17.0.8**
@@ -23,31 +23,13 @@ Ouvrez un terminal à l'endroit où vous souhaitez placer le pipeline (création
 git clone https://github.com/JC-Delmas/PharmStarLauncher.git
 ```
 
-## Configuration de PharmStarLauncher (*optionnelle si on ne veut plus de dépendance locale pour lancer l'outil*)
-
-Pour lancer le pipeline depuis n'importe quelle instance du terminale, veuillez suivre les étapes suivantes :
-
-**- Rendre le script exécutable depuis le terminale :**
+## Installation
+Pour installer PharmStarLauncher, ouvrer un terminal, placez-vous dans le répertoire où se situe le script d'installation **install.sh** (situé dans le dossier PharmStarLauncher) puis tapez :
 ```bash
-chmod +x /chemin/vers/PharmStarLauncher.sh
+bash install.sh
 ```
 
-**- Créer un raccourci du script dans un répertorie déjà présent dans le PATH (ou le créer avant de créer le raccourci) :**
-```bash
-sudo ln -s /chemin/vers/PharmStarLauncher.sh /usr/local/bin/PharmStarLauncher
-```
-
-**- Rechargez le shell :**
-
-*pour MacOS arm64 :*
-```bash
-source ~/.zshrc
-```
-	 
-*pour Linux (système Ubuntu) :*
-```bash
-source ~/.bashrc
-```
+Cette commande permet d'ajouter PharmStarLauncher dans votre PATH et de créer un raccourci directement sur le bureau pouvant être double-cliquable.
 
 ## Exécution
 - **Si vous avez suivi les étapes de configuration, ouvrez un terminal à partir de n'importe quel endroit puis tapez :**
