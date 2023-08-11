@@ -1,0 +1,75 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=low_coverage,Description="Filtered due to low coverage">
+##FILTER=<ID=low_variant_fraction,Description="Filtered due to low variant fraction">
+##FILTER=<ID=homopolymer_region,Description="Filtered because in homopolymer region">
+##FILTER=<ID=problematic_region,Description="Filtered because of noisy region, e.g. CG-rich region or low complexity region">
+##FILTER=<ID=off_target,Description="Filtered because variant is outside of the target region">
+##FILTER=<ID=possible_FP,Description="Possible false positives defined by a set of filtering criteria in AmpliSeq data">
+##FILTER=<ID=low_alt_coverage,Description="Low Alternative Coverage">
+##FILTER=<ID=possible_deamination,Description="Possible Deamination">
+##FILTER=<ID=noisy_intronic_variant,Description="Filtered because the variant is intronic and were found in many samples">
+##FILTER=<ID=strand_bias,Description="Strand Bias">
+##FILTER=<ID=long_INDEL_artifact,Description="Long INDEL Artifact">
+##FILTER=<ID=low_alt_read_group,Description="Filtered due to low alternative read group support">
+##FILTER=<ID=variant_unification,Description="Variant Unification">
+##FILTER=<ID=unbalanced_breakpoints,Description="Unbalanced coverage of breakpoints of a structural variant. Corresponds exactly to SC4H in the #INFO field.">
+##FILTER=<ID=Unknown,Description="The filter is not known">
+##INFO=<ID=TYPE,Number=1,Type=String,Description="Indicates whether variant is SNP | INDEL.">
+##INFO=<ID=SP,Number=1,Type=Integer,Description="P-value of Strand Bias">
+##INFO=<ID=BGN,Number=1,Type=Float,Description="Background Noise">
+##INFO=<ID=ARL,Number=1,Type=Integer,Description="Average Read Length Covering This Position">
+##INFO=<ID=DER,Number=1,Type=Integer,Description="Average Distance to the End of Reads (ref)">
+##INFO=<ID=DEA,Number=1,Type=Integer,Description="Average Distance to the End of Reads (alt)">
+##INFO=<ID=QR,Number=1,Type=Integer,Description="Average Quality (ref)">
+##INFO=<ID=QA,Number=1,Type=Integer,Description="Average Quality (alt)">
+##INFO=<ID=HL,Number=1,Type=Integer,Description="Homopolymer Length">
+##INFO=<ID=VARTYPE,Number=1,Type=Integer,Description="1=mantis; 2=clusterVC; 3=realignment; 4=ALU; 5=gap_align">
+##INFO=<ID=CID,Number=1,Type=String,Description="phased cluster ID">
+##INFO=<ID=CNS,Number=1,Type=Integer,Description="number of covering reads that do not support the variant/cluster">
+##INFO=<ID=CS,Number=1,Type=Integer,Description="number of reads that support the variant/cluster">
+##INFO=<ID=CPS,Number=1,Type=Float,Description="number of reads that partially  support the cluster">
+##INFO=<ID=CCV,Number=1,Type=Float,Description="phased cluster coverage">
+##INFO=<ID=CCR,Number=1,Type=Float,Description="phased cluster correlation">
+##INFO=<ID=VID,Number=1,Type=Integer,Description="variant ID. Corresponds to 1-based position in the full variants list">
+##INFO=<ID=MPID,Number=1,Type=Integer,Description="variant id of the merged parent">
+##INFO=<ID=MCID,Number=.,Type=Integer,Description="variant ids of the unmerged children">
+##INFO=<ID=DBXREF,Number=.,Type=String,Description="Colon-separated key-value pairs of overlaps in database e.g. dbSNP:rs838532,COSMIC:COSM28362">
+##INFO=<ID=OVLP,Number=.,Type=String,Description="Overlap with relevant database. A value of -1 for CG69 means non-available">
+##INFO=<ID=SGVEP,Number=.,Type=String,Description="Variant effect predicted annotations, contains a '|' separated list of attributes (gene|gene_strand|tx_name|exon_rank|c.DNA|protein|codingConsequence), missing attributes are represented with '.'">
+##INFO=<ID=PBM,Number=1,Type=Integer,Description="Phred score of minus strand">
+##INFO=<ID=NVF,Number=1,Type=Float,Description="Adjusted Allele fraction of the alternate allele with regard to reference based on graph quant">
+##INFO=<ID=PBP,Number=1,Type=Integer,Description="Phred score of plus strand">
+##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of structural variant">
+##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the variant described in this record">
+##INFO=<ID=SVLEN,Number=.,Type=Integer,Description="Difference in length between REF and ALT alleles">
+##INFO=<ID=g1,Number=.,Type=Float,Description="G1">
+##INFO=<ID=NDP4,Number=4,Type=Integer,Description="Adjusted #ref plus strand, #ref minus strand, #alt plus strand, #alt minus strand based on graph_quant">
+##INFO=<ID=g2,Number=.,Type=Float,Description="G2">
+##INFO=<ID=g3,Number=.,Type=Float,Description="G3">
+##INFO=<ID=ALR,Number=.,Type=Float,Description="ALR">
+##INFO=<ID=SLR,Number=.,Type=Float,Description="SLR">
+##INFO=<ID=SPLITID,Number=.,Type=String,Description="SPLITID">
+##INFO=<ID=VF,Number=1,Type=Float,Description="Variant Fraction">
+##INFO=<ID=FTM,Number=.,Type=String,Description="FTM">
+##INFO=<ID=FTP,Number=.,Type=String,Description="FTP">
+##INFO=<ID=TST,Number=.,Type=String,Description="TST">
+##INFO=<ID=ADD,Number=.,Type=Character,Description="ADD">
+##INFO=<ID=ALTSTR,Number=1,Type=String,Description="In case of long deletions combined with insertions this fields holds the inserted sequence.">
+##INFO=<ID=SC4,Number=4,Type=Integer,Description="Coverage of reads supporting a structural variant which align to: first breakpoint with left softclip, first breakpoint with right softclip, second breakpoint with left softclip, second breakpoint with right softclip.">
+##INFO=<ID=SC4H,Number=1,Type=String,Description="Filter based on the homogeneity of SC4. Values: PASS/NOPASS. In order to PASS each component must contribute at least 10% x [1-1/sqrt(Cv)] of the total coverage Cv supporting a structural variant.">
+##INFO=<ID=DBVARID,Number=1,Type=String,Description="ID of this element in DBVAR">
+##INFO=<ID=UVF,Number=1,Type=Float,Description="Unbiased variant fraction estimate which takes into account known probe bias.">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read Depth of individual sample">
+##FORMAT=<ID=AD,Number=2,Type=Integer,Description="Allelic depth for the ref and alt alleles in the order listed">
+##FORMAT=<ID=DP4,Number=4,Type=Integer,Description="#ref plus strand, #ref minus strand, #alt plus strand, #alt minus strand">
+##ALT=<ID=DEL,Description="Deletion">
+##ALT=<ID=INV:BOLAND,Description="Boland inversion">
+##ALT=<ID=INV:MSH2_AUSTRALIAN,Description="Australian inversion of exons 2 to 6 in MSH2">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	20499-0110-S1_220125735
+1	98348885	103753	G	A	10000.00	PASS	VARTYPE=1;BGN=0.00515035;ARL=145;DER=69;DEA=71;QR=36;QA=38;PBP=10000;PBM=10000;NVF=0.519;TYPE=SNP;DBXREF=dbSNP:rs1801265,g1000:0.7398,esp5400:0.7159,ExAC:0.7650,clinvar:100123,CLNSIG:Benign,CLNREVSTAT:criteria_provided|single_submitter,GnomAD_AC_exome:193589,GnomAD_AN_exome:250818,GnomAD_AC_genome:22548,GnomAD_AN_genome:31338,GnomAD:0.7660;SGVEP=DPYD|-|NM_000110|2|c.85C>T|p.(Arg29Cys)|missense	GT:DP:AD:DP4	0/1:1067:513,554:269,244,287,267	Fail(REF==ALT)
+3	119533910	126886568	T	C	10000.00	off_target	VARTYPE=1;BGN=0.00616258;ARL=144;DER=65;DEA=70;QR=23;QA=37;PBP=10000;PBM=10000;NVF=0.997;TYPE=SNP;DBXREF=dbSNP:rs4058490,g1000:0.9994,esp5400:0.9996,ExAC:1.0000,GnomAD_AC_exome:251422,GnomAD_AN_exome:251444,GnomAD_AC_genome:31373,GnomAD_AN_genome:31376,GnomAD:0.9999;SGVEP=NR1I2|+|NM_003889|6|c.879T>C|p.(Asn293:)|synonymous	GT:DP:AD:DP4	1/1:1078:3,1075:3,0,539,536	Fail(REF==ALT)
+10	96521422	79002597	A	G	10000.00	off_target	VARTYPE=1;BGN=0.00616258;ARL=145;DER=34;DEA=69;QR=17;QA=37;PBP=10000;PBM=10000;NVF=0.998;TYPE=SNP;DBXREF=dbSNP:rs7902257,g1000:0.9774,GnomAD_AC_genome:30678,GnomAD_AN_genome:31380,GnomAD:0.9776;SGVEP=CYP2C19|+|NM_000769|1|.|.|intergenic	GT:DP:AD:DP4	1/1:1077:2,1075:2,0,563,512	Fail(REF==ALT)
+15	75047426	26768560	C	T	10000.00	PASS	VARTYPE=1;BGN=0.00616258;ARL=145;DER=56;DEA=67;QR=31;QA=37;PBP=10000;PBM=10000;NVF=0.990;TYPE=SNP;DBXREF=dbSNP:rs2470890,g1000:0.2362,esp5400:0.4748,ExAC:0.4550,clinvar:675798,CLNSIG:Benign,CLNREVSTAT:criteria_provided|single_submitter,GnomAD_AC_exome:111943,GnomAD_AN_exome:246696,GnomAD_AC_genome:13722,GnomAD_AN_genome:31322,GnomAD:0.4520;SGVEP=CYP1A2|+|NM_000761|7|c.1548C>T|p.(Asn516:)|synonymous	GT:DP:AD:DP4	1/1:1131:11,1120:4,7,511,609	Fail(REF==ALT)
+X	153760508	111488	A	G	10000.00	PASS	VARTYPE=1;BGN=0.00515035;ARL=144;DEA=71;QA=38;PBP=10000;PBM=10000;NVF=0.989;TYPE=SNP;DBXREF=dbSNP:rs2071429,g1000:0.4148,esp5400:0.3923,ExAC:0.2440,clinvar:93494,CLNSIG:Benign/Likely_benign,CLNREVSTAT:criteria_provided|multiple_submitters|no_conflicts,GnomAD_AC_exome:42165,GnomAD_AN_exome:180645,GnomAD_AC_genome:7103,GnomAD_AN_genome:21625,GnomAD:0.2436;SGVEP=G6PD|-|NM_000402|12|c.1455-13T>C|.|intronic	GT:DP:AD:DP4	1/1:528:6,522:2,4,261,261	Fail(REF==ALT)
+X	153760654	111503	G	A	10000.00	PASS	VARTYPE=1;BGN=0.00616258;ARL=146;DER=58;DEA=70;QR=37;QA=37;PBP=10000;PBM=10000;NVF=0.978;TYPE=SNP;DBXREF=dbSNP:rs2230037,g1000:0.2159,esp5400:0.1667,ExAC:0.1690,clinvar:10366,CLNSIG:Benign/Likely_benign,CLNREVSTAT:criteria_provided|multiple_submitters|no_conflicts,GnomAD_AC_exome:29974,GnomAD_AN_exome:182051,GnomAD_AC_genome:3338,GnomAD_AN_genome:21617,GnomAD:0.1636;SGVEP=G6PD|-|NM_000402|11|c.1401C>T|p.(Tyr467:)|synonymous	GT:DP:AD:DP4	1/1:726:16,710:8,8,367,343	Fail(REF==ALT)
