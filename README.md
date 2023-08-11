@@ -35,18 +35,19 @@ bash install.sh
 Cette commande permet d'ajouter PharmStarLauncher dans votre PATH et de créer un raccourci directement sur le bureau pouvant être double-cliquable.
 
 ## Exécution
-- **Si vous avez suivi les étapes de configuration, ouvrez un terminal à partir de n'importe quel endroit puis tapez :**
+- **Si vous avez correctement installé l'outil, vous pouvez simplement double-cliquer dessus pour qu'il s'exécute.**
+  **Sinon, ouvrez un terminal à partir de n'importe quel endroit puis tapez :**
 ```bash
 PharmStarLauncher
 ```
 
-- **Sinon, vous pouvez lancer l'outil uniquement depuis le répertoire où il se situe avec la commande suivante :**
+- **Vous pouvez également lancer l'outil uniquement depuis le répertoire où il se situe avec la commande suivante :**
 ```bash
-bash PharmStarLauncher.sh
+./ PharmStarLauncher.sh
 ```
 **ou**
 ```bash
-./PharmStarLauncher.sh
+bash PharmStarLauncher.sh
 ```
 
 ## Sortie
