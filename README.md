@@ -41,7 +41,9 @@ bash install.sh
 Cette commande permet d'ajouter PharmStarLauncher dans votre PATH et de créer un raccourci directement sur le bureau pouvant être double-cliquable.
 
 
-*Veillez à bPlacez votre répertoire contenant les fichiers VCF dans le répertoire PharmStarLauncher
+**Veillez à placez votre répertoire contenant les fichiers VCF dans le répertoire PharmStarLauncher.**
+
+
 ## Exécution
 - **Si vous avez correctement installé l'outil, vous pouvez simplement double-cliquer dessus pour qu'il s'exécute.**
   **Sinon, ouvrez un terminal à partir de n'importe quel endroit puis tapez :**
