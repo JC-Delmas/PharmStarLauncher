@@ -2,19 +2,25 @@
 ## Description générale
 PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCh37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. Le pipeline, développé pour l'haplotypage de patients pour le Laboratoire de Toxicologie du CHU de Nîmes, est actuellement à la version 0.1.
 
-Le pipeline utilise la version **0.6.4** de **CrossMap** et la version **2.4.0** de **PharmCAT**.
+Le pipeline a été testé avec les versions **0.6.4** de **CrossMap** et **2.4.0** de **PharmCAT**.
 
 
 ## Dépendances
 Pour fonctionner, le pipeline a impérativement besoin des versions des outils suivants :
 
-**Java = 17.0.8**
-
 **Python >= 3.10.12**
 
-**Dialog = 1.794**
+**Dialog >= 1.794**
 
-**Git = 2.41.0**
+**CrossMap >= 0.6.4**
+
+**PharmCAT >= 2.4.0**
+
+**Git >= 2.41.0**
+
+**Java = 17.0.8**
+
+*Le pipeline ne fonctionne pas avec les versions plus récentes de Java, une adaptation est en cours. Un environnement virtuel est fortement recommandé si vous souhaitez utiliser le pipeline pour l'instant.*
 
 
 ## Installation 
