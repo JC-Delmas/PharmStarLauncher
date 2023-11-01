@@ -1,4 +1,7 @@
 # PharmStarLauncher
+
+**L'outil n'est pas encore disponible sur GitHUB, le développement est en cours.**
+
 ## Description générale
 PharmStarLauncher est un pipeline destiné à l'analyse pharmacogénétique sur un panel de pharmacogènes définis par l'outil PharmCAT. Le pipeline inclut l'analyse de l'outil PharmCAT ainsi qu'une possibilité de liftover (conversion depuis la version GRCh37 vers la version GRCh38) avec l'outil CrossMap. Ce pipeline utilise également dialog pour une utilisation interfacée qui améliore et facilite l'expérience utilisateur. Le pipeline, développé pour l'haplotypage de patients pour le Laboratoire de Toxicologie du CHU de Nîmes, est actuellement à la version 0.1.
 
