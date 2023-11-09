@@ -46,7 +46,7 @@ lifted_files=false # Flag for lifted files
 ### MAIN ###
 
 dialog --title "PharmStarLauncher - CHU Nîmes - Laboratoire de Toxicologie" \
---msgbox "\n\nPipeline développé par Jean-Charles DELMAS.\n\nVersion 0.1 du pipeline.\n\nVous pouvez quitter le programme à tout moment en faisant Control + C\n\nPour continuer, appuyez sur la touche d'entrée." 15 60
+--msgbox "\n\nPipeline développé par Jean-Charles DELMAS.\n\nVersion 0.2 du pipeline.\n\nVous pouvez quitter le programme à tout moment en faisant Control + C\n\nPour continuer, appuyez sur la touche d'entrée." 15 60
 
 dialog --title "Vérifiez les points suivants" --yesno "\n1. Les fichiers VCF doivent être alignés sur la version GRCh38. Si ce n'est pas le cas, le programme vous proposera un liftover mais des informations pourront être perdues (un dossier unmapped sera généré avec les positions qui n'ont pas pu être repositionnées dans un fichier VCF). \n\n2. Chaque VCF correspond à un seul échantillon. \n\n3. Le répertoire contenant les fichiers VCF est situé dans le répertoire courant où se situe le programme.\n\n4. Les fichiers VCF ne doivent pas contenir d'espaces dans leur nom, si c'est le cas le programme remplacera automatiquement tous les espaces dans les noms par des underscores '_'.\n\n\nVoulez-vous continuer?\n(Navigation : touches fléchées)" 23 80
 
